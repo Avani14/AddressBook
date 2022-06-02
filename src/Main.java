@@ -7,6 +7,8 @@ public class Main {
 		System.out.println("Welcome to Address Book!!!");
 		Contacts c = new Contacts();
 		c.contacts();
+		Edit e = new Edit();
+		e.edit_contact();
 	}
 
 }
