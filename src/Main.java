@@ -7,8 +7,14 @@ public class Main {
 		System.out.println("Welcome to Address Book!!!");
 		Contacts c = new Contacts();
 		c.contacts();
+		Display d = new Display();
+		d.display();
 		Edit e = new Edit();
 		e.edit_contact();
+		d.display();
+		Delete del = new Delete();
+		del.delete();
+		d.display();
 	}
 
 }
