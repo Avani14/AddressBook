@@ -1,14 +1,19 @@
+import java.util.ArrayList;
 
-public class Display extends Contacts{
-	public void display()
+public class Display extends AddContacts{
+	
+	public Display(String first_name, String last_name, String address, String city, String state, int zip, long phone,
+			String email_id) {
+		super(first_name, last_name, address, city, state, zip, phone, email_id);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void display()
 	{
-		System.out.println("First Name is "+first_name);
-		System.out.println("Last Name is "+last_name);
-		System.out.println("Address is "+addressComplete);
-		System.out.println("City is "+city);
-		System.out.println("State is "+state);
-		System.out.println("Zip code is "+zip);
-		System.out.println("Phone number  is "+phone);
-		System.out.println("Email id is "+email_id);
+		
+		for(Contacts add : arrayOfContacts)
+		{
+			System.out.println(add);
+		}
 	}
 }
